@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tycoon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <h1>Python Tycoon</h1>
+        <div id="stats">
+            Turn: <span id="turn">1</span> | Currency: $<span id="currency">500.00</span> | Snakes: <span id="snake-count">2</span> | Reputation: <span id="reputation">0</span>
+        </div>
+        <div id="snakes">
+            <h2>Your Snakes</h2>
+            <div id="snake-list"></div>
+        </div>
+        <div id="actions">
+            <button onclick="selectAction('Breed')">Breed Snakes</button>
+            <button onclick="selectAction('Sell')">Sell Snake</button>
+            <button onclick="selectAction('Buy')">Buy Snake</button>
+            <button onclick="selectAction('Expo')">Visit Expo</button>
+            <button onclick="selectAction('Next')">Next Turn</button>
+        </div>
+        <div id="market">
+            <h2>Market Prices</h2>
+            <div id="market-prices"></div>
+        </div>
+        <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
